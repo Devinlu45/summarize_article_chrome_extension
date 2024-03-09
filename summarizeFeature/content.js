@@ -14,7 +14,7 @@ async function summarizeArticle() {
   // Use readability library to parse the text into something readable. 
   const goodArticle = new Readability(newDoc).parse();
   const articleWords = goodArticle ? goodArticle.textContent : 'Article text not found';
-  const apiKey = 'gZIjw3UrIo32eOHe5smd2Y8sOBwXi5vmEZn9Ew8b'
+  const apiKey = <INSERT API KEY HERE>
   // Use a post method to send article text to the cohere api. 
   const options = {
     "method": "POST",
